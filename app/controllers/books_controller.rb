@@ -23,6 +23,13 @@ class BooksController < ApplicationController
     @book.update(book_params)
     redirect_to book_path(@book.id)
   end
+  
+  def destroy
+    book = Book.find(params[:id])
+    book.destroy
+    flash[:notice] = "Book was successfully destroyed."
+    redirect_to '/books'
+  end
 
   private
   def book_params
