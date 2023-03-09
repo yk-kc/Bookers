@@ -35,3 +35,20 @@ p, ol, ul, td {
 a:visited {
   color: #666;
 }
+
+a {
+  color: #000;
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+.field, .actions {
+  margin-bottom: 10px;
+}
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
